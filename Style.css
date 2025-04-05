@@ -4,101 +4,85 @@ body {
 }
 
 /* Shared container styles */
-.login-container,
+/* .login-container,
 .forget-container,
 .email-container {
-  width: 300px;
-  margin: 15rem auto;
-  padding: 30px;
+  width: 400px;
+  margin: 10rem auto;
+  padding: 50px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
+} */
 
-.auth-container {
+/* .auth-container {
   text-align: center;
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-}
+} */
 
 /* Headings */
-.login-container h2,
+/* .login-container h2,
 .auth-container h2 {
   text-align: center;
   margin-bottom: 20px;
-}
+} */
 
 /* Input styles */
-input {
+/* input {
+  margin-bottom: 40px !important;
   width: 100%;
   padding: 10px 12px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
-}
-
-.auth-container input {
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
+  background: #f2f3f5;
+} */
 
 /* OTP inputs */
-.password-field {
+/* .password-field {
   position: relative;
-}
+} */
 
 /* Toggle password icon */
-.toggle-icon {
+/* .toggle-icon {
   position: absolute;
   right: 10px;
-  top: 50%;
-  transform: translateY(-75%);
+  top: 10%;
+  transform: translateY(10%);
   cursor: pointer;
   color: #888;
-}
+} */
 
 /* Button styles */
-button {
+/* button {
   width: 100%;
   padding: 10px;
-  background-color: #4a90e2;
+  background: #2873f0;
   border: none;
   color: white;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
 }
-
-.auth-container button {
-  background-color: blue;
-  border-radius: 5px;
-}
-
 button:hover {
-  background-color: #357bd8;
-}
-
-.auth-container button:hover {
-  background-color: darkblue;
-}
+  background-color: #0059f4;
+} */
 
 /* Other text styles */
-.forget-text {
+/* .forget-text {
+  font-weight: 500;
   text-align: right;
-  font-size: 13px;
-  margin-bottom: 20px;
-}
+  font-size: 12px;
+  margin-bottom: 30px;
+} */
 
-.text-justify {
-  /* text-align: justify; */
+/* .text-justify {
   font-family: Jost;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0%;
   vertical-align: middle;
-}
+} */
