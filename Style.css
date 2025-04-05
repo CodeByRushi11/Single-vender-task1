@@ -1,0 +1,104 @@
+/* Global styles */
+body {
+  background: #edf2f7;
+}
+
+/* Shared container styles */
+.login-container,
+.forget-container,
+.email-container {
+  width: 300px;
+  margin: 15rem auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+.login-container h2,
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-container input {
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* OTP inputs */
+.password-field {
+  position: relative;
+}
+
+/* Toggle password icon */
+.toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-75%);
+  cursor: pointer;
+  color: #888;
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-container button {
+  background-color: blue;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #357bd8;
+}
+
+.auth-container button:hover {
+  background-color: darkblue;
+}
+
+/* Other text styles */
+.forget-text {
+  text-align: right;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.text-justify {
+  /* text-align: justify; */
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
