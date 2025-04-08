@@ -1,6 +1,7 @@
 import { useState } from "react";
 import frames from "../assets/frames.png";
 import cart from "../assets/cart.png";
+import profile from "../assets/profileNew.png";
 import Phone from "../assets/Phone.png";
 import settings from "../assets/settings.png";
 import charts from "../assets/charts.png";
@@ -12,9 +13,9 @@ const Sidebar = () => {
 
   const menuItems = [
     { title: "Dashboard", icon: frames, path: "Dashboard" },
+    { title: "Profile", icon: profile, path: "/Profile" },
     { title: "Product", icon: cart, path: "/Product" },
-    { title: "Profile", icon: cart, path: "/Profile" },
-    { title: "Chart/Graphs", icon: charts, path: "/charts" },
+    { title: "Chart/Graphs", icon: charts, path: "/Chart" },
     { title: "Contact", icon: Phone, path: "/contact" },
     { title: "Settings", icon: settings, path: "/settings" },
   ];
@@ -33,13 +34,13 @@ const Sidebar = () => {
           key={item.title}
           className={`flex items-center gap-x-3 px-4 py-2 cursor-pointer rounded-lg ${
             activeItem === item.title
-              ? "bg-white text-blue-800"
+              ? "bg-white text-black"
               : "bg-blue-700 hover:bg-blue-600"
           }`}
           onClick={() => handleClick(item.title, item.path)}
         >
-          <img src={item.icon} alt={item.title} className="w-6 h-6" />
-          <span className="text-lg">{item.title}</span>
+          <img src={item.icon} alt={item.title} className="w-6 h-6 " />
+          <span className="text-lg font-bold">{item.title}</span>
         </div>
       ))}
     </div>

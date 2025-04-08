@@ -6,6 +6,7 @@ import Layout from "./Pages/Layout";
 import Dashboard from "./Pages/Dashboard";
 import Profile from "./Pages/Profile";
 import Product from "./Pages/Product";
+import Chart from "./Pages/Chart";
 
 function App() {
   return (
@@ -18,11 +19,8 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Product" element={<Product />} />
+          <Route path="/Chart" element={<Chart />} />
         </Route>
-        {/* <Route path="/Layout" element={<Layout />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route path="/Product" element={<Product />} /> */}
       </Routes>
     </Router>
   );

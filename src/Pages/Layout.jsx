@@ -1,23 +1,7 @@
-// import React from "react";
-// import Header from "../Component/header";
-// import Sidebar from "../Component/Sidebar";
-// import { Outlet } from "react-router-dom";
-
-// const Layout = () => {
-//   return (
-//     <div style={{ backgroundColor: "#edf2f7" }}>
-//       <Header />
-//       <Sidebar />
-//       <Outlet />
-//     </div>
-//   );
-// };
-
-// export default Layout;
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../Component/header";
 import Sidebar from "../Component/Sidebar";
+import Header from "../Component/Header";
 
 const Layout = () => {
   return (

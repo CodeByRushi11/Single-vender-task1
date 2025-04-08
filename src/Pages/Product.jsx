@@ -105,7 +105,7 @@ export default function Product() {
     <div>
       <h1 className="font-bold text-[25px] ">Product</h1>
 
-      <div className="w-[1184px] h-[720px] bg-white rounded-md shadow-lg p-4 mx-auto mt-2">
+      <div className="w-[1184px] h-[720px] bg-white rounded-md shadow-lg p-4  mt-2">
         {/* Search and Add Button */}
         <div className="flex justify-between items-center mb-6">
           <div>

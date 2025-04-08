@@ -15,11 +15,11 @@ const Header = () => {
   return (
     <nav className="w-full bg-white sticky top-0 h-[60px] py-[10px] px-[16px] sm:px-[20px] flex items-center justify-between shadow-sm z-50">
       {/* Search Input */}
-      <div className="relative w-[50vw] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl flex-shrink">
+      <div className="relative w-[50vw]">
         <input
           type="text"
           placeholder="Search Here"
-          className="w-[50vw] px-[15px] py-[10px] rounded-md text-sm outline-none shadow-[0_1px_3px_rgba(0,0,0,0.1)] border border-gray-200"
+          className="w-full px-4 pr-10 py-2 rounded-md text-sm outline-none shadow-[0_1px_3px_rgba(0,0,0,0.1)] "
         />
         <img
           src={Search}
