@@ -50,7 +50,7 @@ const CheckEmail = () => {
           ))}
         </div>
         {/* When on create new password button redirect to the next page name create new passowrd */}
-        <Link to="ResetPassword">
+        <Link to="/ResetPassword">
           <button className="w-full px-4 py-2 bg-[#2873f0] text-white text-base rounded-md hover:bg-[#0059f4] cursor-pointer mb-[15px] text-[12px]">
             Create a new Password
           </button>
