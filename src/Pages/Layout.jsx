@@ -1,40 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../Component/Sidebar";
 import Header from "../Component/Header";
 
 const Layout = () => {
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
+  const toggleSidebar = () => setIsMobileOpen(!isMobileOpen);
+
   return (
-    <div
-      className="min-h-screen flex flex-col"
-      style={{ backgroundColor: "#edf2f7" }}
-    >
-      {/* Header with fixed height */}
-      <div
-        className="h-[60px] w-full sticky top-0"
-        style={{ backgroundColor: "white" }}
-      >
-        <Header />
+    <div className="min-h-screen flex flex-col bg-[#edf2f7]">
+      <div className="h-[60px] w-full sticky top-0 bg-white z-50">
+        <Header toggleSidebar={toggleSidebar} />
       </div>
 
-      {/* Main content area with Sidebar + Page content */}
-      <div
-        className="flex flex-1"
-        style={{ height: "calc(100vh - 60px)", backgroundColor: "#edf2f7" }}
-      >
-        {/* Sidebar with background */}
-        <aside
-          className="w-64"
-          style={{ backgroundColor: "#edf2f7", height: "calc(100vh - 60px)" }}
-        >
-          <Sidebar />
+      <div className="flex flex-1" style={{ height: "calc(100vh - 60px)" }}>
+        <aside className="z-50">
+          <Sidebar
+            isMobileOpen={isMobileOpen}
+            setIsMobileOpen={setIsMobileOpen}
+          />
         </aside>
 
-        {/* Main content area */}
-        <main
-          className="flex-1 p-4 overflow-auto"
-          style={{ backgroundColor: "#edf2f7", height: "calc(100vh - 60px)" }}
-        >
+        <main className="flex-1 p-4 overflow-auto bg-[#edf2f7]">
           <Outlet />
         </main>
       </div>

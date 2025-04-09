@@ -9,30 +9,32 @@ import StoreSettings from "../Component/StoreSettings";
 const Profile = () => {
   return (
     <div className="p-4 sm:p-6 font-jost">
+      {/* Header */}
       <div className="flex items-center gap-2 mb-6">
         <img src={profile} alt="Frames Icon" className="w-6 h-6" />
         <h1 className="font-bold text-[20px] sm:text-[25px]">Profile</h1>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-6">
+      {/* First Row: MyProfile + LoginHistory | EditProfile */}
+      <div className="flex flex-col lg:flex-row gap-6">
         {/* Left Column */}
-        <div className="w-full md:w-[30%] space-y-6">
+        <div className="w-full lg:w-[30%] space-y-6">
           <MyProfile />
           <LoginHistory />
         </div>
 
         {/* Right Column */}
-        <div className="w-full md:w-[70%]">
+        <div className="w-full lg:w-[70%]">
           <EditProfile />
         </div>
       </div>
 
-      {/* Company Info - Moved below the flex container */}
-      <div className="flex flex-col md:flex-row gap-6 mt-8">
-        <div className="w-full md:w-[70%]">
+      {/* Second Row: CompanyInfo + StoreSettings */}
+      <div className="flex flex-col lg:flex-row gap-6 mt-8">
+        <div className="w-full lg:w-[70%]">
           <CompanyInfo />
         </div>
-        <div className="w-full md:w-[30%]">
+        <div className="w-full lg:w-[30%]">
           <StoreSettings />
         </div>
       </div>

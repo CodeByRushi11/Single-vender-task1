@@ -64,7 +64,7 @@ const ChartTitle = () => {
   }, []);
 
   return (
-    <div className="bg-white p-4 rounded-[10px] shadow-md w-full  md:w-[66.66%] border border-[#9B9B9B]">
+    <div className="bg-white p-4 rounded-[10px] shadow-md w-full lg:w-2/3 border border-[#9B9B9B]">
       <h2 className="text-xl font-semibold mb-4 text-center">Chart Title</h2>
       <canvas ref={chartRef} className="block w-full" height={200}></canvas>
     </div>

@@ -18,13 +18,14 @@ const Dashboard = () => {
 
       {/* Charts */}
       <div className="flex flex-wrap gap-4 sm:gap-6">
-        <div className="w-full flex flex-col md:flex-row gap-4">
+        <div className="w-full flex flex-col lg:flex-row gap-4">
           <SignupChart />
           <VisitorChart />
           <OrderChart />
         </div>
+
         {/* Chart section (line + donut) */}
-        <div className="w-full flex flex-col md:flex-row gap-4">
+        <div className="w-full flex flex-col lg:flex-row gap-4">
           <ChartTitle />
           <ProductChart />
         </div>

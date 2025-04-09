@@ -52,9 +52,9 @@ const TopSellingTable = () => {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col lg:flex-row gap-4">
         {/* Table Container */}
-        <div className="bg-white p-4 rounded-[10px] shadow-md w-full md:w-2/3 overflow-x-auto border border-[#9B9B9B]">
+        <div className="bg-white p-4 rounded-[10px] shadow-md w-full lg:w-2/3 overflow-x-auto border border-[#9B9B9B]">
           <h2 className="text-xl font-semibold mb-4">TOP SELLING</h2>
           <table className="min-w-full text-sm text-left">
             <thead>
@@ -101,7 +101,7 @@ const TopSellingTable = () => {
         </div>
 
         {/* Image Preview Container */}
-        <div className="bg-white p-4 rounded-[10px] shadow-md w-full md:w-1/3 flex items-center justify-center min-h-[240px] border border-[#9B9B9B]">
+        <div className="bg-white p-4 rounded-[10px] shadow-md w-full lg:w-1/3 flex items-center justify-center min-h-[240px] border border-[#9B9B9B]">
           <img
             src={selectedProduct.image}
             alt={selectedProduct.name}

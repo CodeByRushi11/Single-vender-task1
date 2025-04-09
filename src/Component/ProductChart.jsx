@@ -57,7 +57,7 @@ const ProductChart = () => {
   }, []);
 
   return (
-    <div className="bg-white p-4 rounded-[10px] shadow-md  md:w-[33.33%] flex flex-col items-center justify-center border border-[#9B9B9B]">
+    <div className="bg-white p-4 rounded-[10px] shadow-md w-full lg:w-2/3 border border-[#9B9B9B]">
       <h2 className="text-xl font-semibold mb-4 text-center">Product</h2>
       <canvas ref={chartRef} className="w-full h-auto" />
     </div>
