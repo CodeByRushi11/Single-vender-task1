@@ -24,7 +24,7 @@ const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
   const handleClick = (title, path) => {
     setActiveItem(title);
     navigate(path);
-    if (setIsMobileOpen) setIsMobileOpen(false); // Close on mobile
+    if (setIsMobileOpen) setIsMobileOpen(false);
   };
 
   return (
