@@ -25,9 +25,18 @@ const Dashboard = () => {
         </div>
 
         {/* Chart section (line + donut) */}
+
+        {/* Chart section (line + donut) */}
         <div className="w-full flex flex-col lg:flex-row gap-4">
-          <ChartTitle />
-          <ProductChart />
+          {/* ChartTitle takes 2/3 */}
+          <div className="w-full lg:w-2/3 min-h-[200px]">
+            <ChartTitle />
+          </div>
+
+          {/* ProductChart takes 1/3 */}
+          <div className="w-full lg:w-1/3 min-h-[200px]">
+            <ProductChart />
+          </div>
         </div>
 
         {/* Top Selling Table */}

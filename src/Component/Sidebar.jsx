@@ -31,7 +31,7 @@ const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
     <>
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 z-40 sm:hidden transition-opacity backdrop-blur-sm bg-black/40 ${
+        className={`fixed inset-0 z-20 sm:hidden transition-opacity backdrop-blur-sm bg-black/40 ${
           isMobileOpen ? "block" : "hidden"
         }`}
         onClick={() => setIsMobileOpen(false)}
@@ -40,12 +40,12 @@ const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
       {/* Sidebar */}
       <div
         className={`
-    fixed sm:sticky top-0 sm:top-[60px] left-0 z-50 p-4 bg-[#edf2f7] text-white flex flex-col gap-5 justify-center
+    fixed sm:sticky top-0 sm:top-[65px] left-0 z-20 p-4 bg-[#edf2f7] text-white flex flex-col gap-5 justify-start
     transition-transform ${
       isMobileOpen ? "translate-x-0" : "-translate-x-full"
     } sm:translate-x-0 sm:flex
     w-1/2 sm:w-64
-    h-screen sm:h-[calc(100vh-60px)]
+    h-screen sm:h-[calc(100vh-65px)]
   `}
       >
         {/* Close Button on Mobile */}

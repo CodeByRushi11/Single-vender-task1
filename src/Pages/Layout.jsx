@@ -22,7 +22,7 @@ const Layout = () => {
           />
         </aside>
 
-        <main className="flex-1 p-4 overflow-auto bg-[#edf2f7]">
+        <main className="flex-1 overflow-auto bg-[#edf2f7]">
           <Outlet />
         </main>
       </div>
