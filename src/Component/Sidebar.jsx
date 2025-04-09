@@ -17,8 +17,8 @@ const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
     { title: "Profile", icon: profile, path: "/Profile" },
     { title: "Product", icon: cart, path: "/Product" },
     { title: "Chart/Graphs", icon: charts, path: "/Chart" },
-    { title: "Contact", icon: Phone, path: "/contact" },
-    { title: "Settings", icon: settings, path: "/settings" },
+    { title: "Contact", icon: Phone, path: "/Contact" },
+    { title: "Setting", icon: settings, path: "/Setting" },
   ];
 
   const handleClick = (title, path) => {

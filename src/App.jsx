@@ -7,6 +7,10 @@ import Dashboard from "./Pages/Dashboard";
 import Profile from "./Pages/Profile";
 import Product from "./Pages/Product";
 import Chart from "./Pages/Chart";
+import ResetPassword from "./Pages/ResetPassword";
+import PasswordSuccess from "./Pages/PasswordSuccess";
+import Setting from "./Pages/Setting";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Chart" element={<Chart />} />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
+          <Route path="/PasswordSuccess" element={<PasswordSuccess />} />
+          <Route path="/Setting" element={<Setting />} />
+          <Route path="/Contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>

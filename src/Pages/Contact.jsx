@@ -42,9 +42,19 @@ export default function Contact() {
       <div className="flex flex-1">
         {/* Sidebar */}
         <div className="w-60 bg-white shadow rounded-lg p-4 space-y-4">
-          {["Dashboard", "Profile", "Product", "Chart/Graphs", "Contact", "Setting"].map((item) => (
-            <button key={item} className="w-full text-left p-2 rounded bg-blue-500 text-white hover:bg-blue-600">
-          <Link to={`/${item}`}> {item}</Link>   
+          {[
+            "Dashboard",
+            "Profile",
+            "Product",
+            "Chart/Graphs",
+            "Contact",
+            "Setting",
+          ].map((item) => (
+            <button
+              key={item}
+              className="w-full text-left p-2 rounded bg-blue-500 text-white hover:bg-blue-600"
+            >
+              <Link to={`/${item}`}> {item}</Link>
             </button>
           ))}
         </div>
@@ -73,8 +83,17 @@ export default function Contact() {
               <table className="min-w-full table-auto text-left">
                 <thead className="bg-gray-100">
                   <tr>
-                    {["Vendor", "City", "Contact", "Email", "Status", "Action"].map((head) => (
-                      <th key={head} className="px-4 py-2">{head}</th>
+                    {[
+                      "Vendor",
+                      "City",
+                      "Contact",
+                      "Email",
+                      "Status",
+                      "Action",
+                    ].map((head) => (
+                      <th key={head} className="px-4 py-2">
+                        {head}
+                      </th>
                     ))}
                   </tr>
                 </thead>
@@ -93,8 +112,16 @@ export default function Contact() {
                       <td className="px-4 py-2">{vendor.contact}</td>
                       <td className="px-4 py-2">{vendor.email}</td>
                       <td className="px-4 py-2">
-                        <span className={index === 1 || index === 5 ? "text-red-500" : "text-green-500"}>
-                          {index === 1 || index === 5 ? "Not Available" : "Available"}
+                        <span
+                          className={
+                            index === 1 || index === 5
+                              ? "text-red-500"
+                              : "text-green-500"
+                          }
+                        >
+                          {index === 1 || index === 5
+                            ? "Not Available"
+                            : "Available"}
                         </span>
                       </td>
                       <td className="px-4 py-2 flex gap-2">
@@ -119,7 +146,8 @@ export default function Contact() {
               <div>
                 <p className="font-bold">Contact Admin</p>
                 <div className="flex items-center gap-2 mt-1 text-sm">
-                  <span>@Mndvre123</span> | <span>Mndvre123</span> | <span>@Mndvre</span> | <span>8975648487</span>
+                  <span>@Mndvre123</span> | <span>Mndvre123</span> |{" "}
+                  <span>@Mndvre</span> | <span>8975648487</span>
                 </div>
               </div>
             </div>

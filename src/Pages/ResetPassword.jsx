@@ -7,11 +7,11 @@ const ResetPassword = () => {
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-const navigate=useNavigate();
-   const handleSubmit = async (e) => {
-     e.preventDefault();
-     navigate("/password-success");
-   };
+  const navigate = useNavigate();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    navigate("/PasswordSuccess");
+  };
   return (
     <form onSubmit={handleSubmit}>
       <div className="min-h-screen bg-[#f1f7fa] flex items-center justify-center">
@@ -23,7 +23,6 @@ const navigate=useNavigate();
             Please enter and confirm your new password. You will need to login
             after you reset.
           </p>
-
           {/* New Password */}
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1">
@@ -47,7 +46,6 @@ const navigate=useNavigate();
             </div>
             <p className="text-xs text-gray-500 mt-1">must contain 8 char.</p>
           </div>
-
           {/* Confirm Password */}
           <div className="mb-6">
             <label className="block text-sm font-medium mb-1">
@@ -70,8 +68,8 @@ const navigate=useNavigate();
               </button>
             </div>
           </div>
-
           {/* Submit Button */}
+
           <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition">
             Reset New Password
           </button>
