@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import success from "../assets/success.png";
+
+
 const PasswordSuccess = () => {
   return (
     <div className="min-h-screen bg-[#eaf3f7] flex items-center justify-center px-4">
@@ -9,7 +13,7 @@ const PasswordSuccess = () => {
         </h2>
 
         <img
-          src="/successillu.jpg"
+          src={success}
           alt="Success"
           className="w-40 h-40 mx-auto mb-4"
         />
