@@ -1,7 +1,6 @@
 // src/components/VendorList.jsx
 import { useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const vendors = Array(8).fill({
   name: "Mohan",
@@ -11,54 +10,13 @@ const vendors = Array(8).fill({
   status: "Available",
 });
 
-export default function Contact() {
+export default function VendorList() {
   const [search, setSearch] = useState("");
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 flex flex-col">
-      {/* Topbar */}
-      <div className="flex justify-end items-center gap-4 mb-4">
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search Here"
-            className="border rounded-full px-4 py-2 w-64"
-          />
-        </div>
-        <div className="flex items-center gap-2">
-          <img
-            src="https://via.placeholder.com/40"
-            alt="User"
-            className="rounded-full w-10 h-10"
-          />
-          <div>
-            <p className="font-semibold">Jack Doe</p>
-            <p className="text-xs text-gray-500">ADMIN</p>
-          </div>
-        </div>
-      </div>
-
       {/* Main Content */}
       <div className="flex flex-1">
-        {/* Sidebar */}
-        <div className="w-60 bg-white shadow rounded-lg p-4 space-y-4">
-          {[
-            "Dashboard",
-            "Profile",
-            "Product",
-            "Chart/Graphs",
-            "Contact",
-            "Setting",
-          ].map((item) => (
-            <button
-              key={item}
-              className="w-full text-left p-2 rounded bg-blue-500 text-white hover:bg-blue-600"
-            >
-              <Link to={`/${item}`}> {item}</Link>
-            </button>
-          ))}
-        </div>
-
         {/* Table Section */}
         <div className="flex-1 p-4">
           <div className="bg-white rounded-lg shadow p-4">

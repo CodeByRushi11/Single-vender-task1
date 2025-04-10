@@ -23,23 +23,6 @@ const Setting = () => {
             Delete Account
           </button>
         </div>
-        <div className="mt-10 flex flex-col space-y-2">
-          <button className="text-left p-2 hover:bg-blue-200 rounded-lg bg-blue-500 text-white">
-            Dashboard
-          </button>
-          <button className="text-left p-2 hover:bg-gray-200 rounded-lg">
-            Profile
-          </button>
-          <button className="text-left p-2 hover:bg-gray-200 rounded-lg">
-            Product
-          </button>
-          <button className="text-left p-2 hover:bg-gray-200 rounded-lg">
-            Chart/Graphs
-          </button>
-          <button className="text-left p-2 hover:bg-gray-200 rounded-lg">
-            Contact
-          </button>
-        </div>
       </aside>
 
       {/* Main Content */}
