@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import frames from "../assets/frames.png";
 import { Eye, EyeOff } from "lucide-react"; // Import eye icons
 
 const ResetPassword = () => {
