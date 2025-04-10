@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import success from "../assets/success.png";
+
+
 const PasswordSuccess = () => {
   return (
     <div className="min-h-screen bg-[#eaf3f7] flex items-center justify-center px-4">

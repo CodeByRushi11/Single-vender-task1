@@ -1,15 +1,34 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./Pages/LoginPage";
-import ForgotPasswordPage from "./Pages/ForgotPasswordPage";
-import CheckEmailPage from "./Pages/CheckEmailPage";
+import Login from "./Pages/Login";
+import ForgotPassword from "./Pages/ForgetPassword";
+import CheckEmail from "./Pages/CheckEmail";
+import Layout from "./Pages/Layout";
+import Dashboard from "./Pages/Dashboard";
+import Profile from "./Pages/Profile";
+import Product from "./Pages/Product";
+import Chart from "./Pages/Chart";
+import ResetPassword from "./Pages/ResetPassword";
+import PasswordSuccess from "./Pages/PasswordSuccess";
+import Setting from "./Pages/Setting";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-        <Route path="/check-email" element={<CheckEmailPage />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/ForgotPassword" element={<ForgotPassword />} />
+        <Route path="/CheckEmail" element={<CheckEmail />} />
+        <Route element={<Layout />}>
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Product" element={<Product />} />
+          <Route path="/Chart" element={<Chart />} />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
+          <Route path="/PasswordSuccess" element={<PasswordSuccess />} />
+          <Route path="/Setting" element={<Setting />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Route>
       </Routes>
     </Router>
   );

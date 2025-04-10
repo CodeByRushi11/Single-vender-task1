@@ -6,12 +6,15 @@ import frames4 from "../assets/Group 1000004408.png";
 import frames5 from "../assets/Frame 1000007024.png";
 import frames6 from "../assets/Frame 1000007025.png";
 import frames7 from "../assets/Group 1000004409.png";
-
+import charts from "../assets/charGraph.png";
 const Chart = () => {
   return (
     <div className="bg-gray-100 min-h-screen p-6 flex flex-col gap-4">
       {/* Title */}
-      <h1 className="text-2xl font-bold">Chart/Graph</h1>
+      <div className="flex items-center gap-2 mb-6">
+        <img src={charts} alt="Frames Icon" className="w-6 h-6" />
+        <h1 className="font-bold text-[20px] sm:text-[25px]">Chart/Graph</h1>
+      </div>
 
       {/* Top Stats Row */}
       {/* Top Stats Row */}

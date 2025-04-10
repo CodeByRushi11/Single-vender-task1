@@ -1,5 +1,7 @@
 import React from "react";
+
 import profileNew from "../assets/profileNew.png";
+
 
 const Setting = () => {
   return (
@@ -44,7 +46,9 @@ const Setting = () => {
             ></textarea>
             <div className="flex items-center space-x-4">
               <img
+
                 src={profileNew}
+
                 alt="Profile"
                 className="rounded-full w-20 h-20"
               />

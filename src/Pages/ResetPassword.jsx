@@ -11,10 +11,12 @@ const ResetPassword = () => {
 
   const navigate = useNavigate();
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/PasswordSuccess");
   };
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -26,7 +28,6 @@ const ResetPassword = () => {
           <p className="text-sm text-center text-black font-medium mb-6">
             Please enter and confirm your new password. You will need to login after you reset.
           </p>
-
           {/* New Password */}
           <div className="mb-4 relative">
             <label className="block text-sm font-medium mb-1">
@@ -47,7 +48,6 @@ const ResetPassword = () => {
             </div>
             <p className="text-xs text-gray-500 mt-1">Must contain 8 characters.</p>
           </div>
-
           {/* Confirm Password */}
           <div className="mb-6 relative">
             <label className="block text-sm font-medium mb-1">
@@ -67,8 +67,8 @@ const ResetPassword = () => {
               {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </div>
           </div>
-
           {/* Submit Button */}
+
           <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition">
             Reset New Password
           </button>

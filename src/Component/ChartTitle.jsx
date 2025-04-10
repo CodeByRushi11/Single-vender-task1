@@ -39,6 +39,7 @@ const ChartTitle = () => {
       },
       options: {
         responsive: true,
+
         plugins: {
           legend: {
             position: "bottom",
@@ -64,9 +65,14 @@ const ChartTitle = () => {
   }, []);
 
   return (
-    <div className="bg-white p-4 rounded-[10px] shadow-md w-full lg:w-2/3 border border-[#9B9B9B]">
+    <div className="bg-white p-4 rounded-[10px] shadow-md w-full h-full min-h-[250px] border border-[#9B9B9B]">
       <h2 className="text-xl font-semibold mb-4 text-center">Chart Title</h2>
-      <canvas ref={chartRef} className="block w-full" height={200}></canvas>
+      <canvas
+        ref={chartRef}
+        width={600}
+        height={300}
+        className="block w-full h-[300px] md:h-[300px]"
+      ></canvas>
     </div>
   );
 };
