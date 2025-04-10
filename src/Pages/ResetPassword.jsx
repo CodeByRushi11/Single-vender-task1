@@ -11,12 +11,10 @@ const ResetPassword = () => {
 
   const navigate = useNavigate();
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/PasswordSuccess");
   };
-
 
   return (
     <form onSubmit={handleSubmit}>
@@ -26,7 +24,8 @@ const ResetPassword = () => {
             Create Your Password
           </h2>
           <p className="text-sm text-center text-black font-medium mb-6">
-            Please enter and confirm your new password. You will need to login after you reset.
+            Please enter and confirm your new password. You will need to login
+            after you reset.
           </p>
           {/* New Password */}
           <div className="mb-4 relative">
@@ -46,7 +45,9 @@ const ResetPassword = () => {
             >
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </div>
-            <p className="text-xs text-gray-500 mt-1">Must contain 8 characters.</p>
+            <p className="text-xs text-gray-500 mt-1">
+              Must contain 8 characters.
+            </p>
           </div>
           {/* Confirm Password */}
           <div className="mb-6 relative">

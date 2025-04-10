@@ -2,7 +2,6 @@ import React from "react";
 
 import profileNew from "../assets/profileNew.png";
 
-
 const Setting = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -26,7 +25,6 @@ const Setting = () => {
             Delete Account
           </button>
         </div>
-        
       </aside>
 
       {/* Main Content */}
@@ -46,9 +44,7 @@ const Setting = () => {
             ></textarea>
             <div className="flex items-center space-x-4">
               <img
-
                 src={profileNew}
-
                 alt="Profile"
                 className="rounded-full w-20 h-20"
               />

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import success from "../assets/success.png";
 
-
 const PasswordSuccess = () => {
   return (
     <div className="min-h-screen bg-[#eaf3f7] flex items-center justify-center px-4">
@@ -12,11 +11,7 @@ const PasswordSuccess = () => {
           Password Changed <br /> Successfully
         </h2>
 
-        <img
-          src={success}
-          alt="Success"
-          className="w-40 h-40 mx-auto mb-4"
-        />
+        <img src={success} alt="Success" className="w-40 h-40 mx-auto mb-4" />
 
         <p className="text-sm text-gray-700 mb-6">
           Your password has been changed successfully. <br />
