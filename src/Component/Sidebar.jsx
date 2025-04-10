@@ -9,7 +9,10 @@ import { useNavigate } from "react-router-dom";
 import { X } from "lucide-react";
 
 const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
-  const [activeItem, setActiveItem] = useState("Dashboard");
+  const [activeItem, setActiveItem] = useState(() => {
+    return localStorage.getItem("activeItem") || "Dashboard";
+  });
+
   const navigate = useNavigate();
 
   const menuItems = [
@@ -23,6 +26,7 @@ const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
 
   const handleClick = (title, path) => {
     setActiveItem(title);
+    localStorage.setItem("activeItem", title);
     navigate(path);
     if (setIsMobileOpen) setIsMobileOpen(false);
   };

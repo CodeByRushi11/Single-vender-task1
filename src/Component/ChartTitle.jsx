@@ -69,7 +69,9 @@ const ChartTitle = () => {
       <h2 className="text-xl font-semibold mb-4 text-center">Chart Title</h2>
       <canvas
         ref={chartRef}
-        className="block w-full h-[300px] md:h-[400px]" // Tailwind-controlled height
+        width={600}
+        height={300}
+        className="block w-full h-[300px] md:h-[300px]"
       ></canvas>
     </div>
   );
