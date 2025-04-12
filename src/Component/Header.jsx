@@ -37,7 +37,9 @@ const Header = ({ toggleSidebar, setIsSignOutModalOpen }) => {
       </div>
 
       {/* Logo / Web Name */}
-      <h2 className="text-3xl font-bold text-blue-600">Single Vendor</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">
+        Single Vendor
+      </h2>
 
       {/* Right Section */}
       <div className="flex items-center gap-2 sm:gap-3 md:gap-4 ml-2 relative">
